@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<Project Type="Project" LVVersion="18008000">
+<Project Type="Project" LVVersion="20008000">
 	<Property Name="CCSymbols" Type="Str"></Property>
 	<Property Name="NI.LV.All.SaveVersion" Type="Str">18.0</Property>
 	<Property Name="NI.LV.All.SourceOnly" Type="Bool">true</Property>
@@ -17,7 +17,9 @@
 		<Item Name="Tools" Type="Folder">
 			<Item Name="SignProvider.vi" Type="VI" URL="../Tools/SignProvider.vi"/>
 		</Item>
+		<Item Name="ButtonDialogEnum.ctl" Type="VI" URL="../ButtonDialogEnum.ctl"/>
 		<Item Name="DeleteFile.vi" Type="VI" URL="../DeleteFile.vi"/>
+		<Item Name="Dialog.vi" Type="VI" URL="../Dialog.vi"/>
 		<Item Name="LVDeleteFile_Item_Init.vi" Type="VI" URL="../LVDeleteFile_Item_Init.vi"/>
 		<Item Name="LVDeleteFile_Item_Interface.vi" Type="VI" URL="../LVDeleteFile_Item_Interface.vi"/>
 		<Item Name="LVDeleteFile_Item_OnCommand.vi" Type="VI" URL="../LVDeleteFile_Item_OnCommand.vi"/>
@@ -26,33 +28,26 @@
 		<Item Name="LVDeleteFile_Provider_Interface.vi" Type="VI" URL="../LVDeleteFile_Provider_Interface.vi"/>
 		<Item Name="LVDeleteFile_Provider_OnCommand.vi" Type="VI" URL="../LVDeleteFile_Provider_OnCommand.vi"/>
 		<Item Name="LVDeleteFile_Provider_OnPopupMenu.vi" Type="VI" URL="../LVDeleteFile_Provider_OnPopupMenu.vi"/>
-		<Item Name="Send File to RecycleBin.vi" Type="VI" URL="../Send File to RecycleBin.vi"/>
+		<Item Name="MoveToRecycleBin.vi" Type="VI" URL="../MoveToRecycleBin.vi"/>
+		<Item Name="ReadINI.vi" Type="VI" URL="../ReadINI.vi"/>
+		<Item Name="WriteINI.vi" Type="VI" URL="../WriteINI.vi"/>
 		<Item Name="Dependencies" Type="Dependencies">
 			<Item Name="vi.lib" Type="Folder">
 				<Item Name="8.6CompatibleGlobalVar.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/config.llb/8.6CompatibleGlobalVar.vi"/>
 				<Item Name="Check if File or Folder Exists.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/libraryn.llb/Check if File or Folder Exists.vi"/>
 				<Item Name="Clear Errors.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Clear Errors.vi"/>
-				<Item Name="Convert property node font to graphics font.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Convert property node font to graphics font.vi"/>
 				<Item Name="Error Cluster From Error Code.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Error Cluster From Error Code.vi"/>
-				<Item Name="Get String Text Bounds.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Get String Text Bounds.vi"/>
-				<Item Name="Get Text Rect.vi" Type="VI" URL="/&lt;vilib&gt;/picture/picture.llb/Get Text Rect.vi"/>
-				<Item Name="Longest Line Length in Pixels.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Longest Line Length in Pixels.vi"/>
-				<Item Name="LVBoundsTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVBoundsTypeDef.ctl"/>
-				<Item Name="LVRectTypeDef.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/miscctls.llb/LVRectTypeDef.ctl"/>
 				<Item Name="NI_FileType.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/lvfile.llb/NI_FileType.lvlib"/>
 				<Item Name="NI_LVConfig.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/config.llb/NI_LVConfig.lvlib"/>
 				<Item Name="NI_PackedLibraryUtility.lvlib" Type="Library" URL="/&lt;vilib&gt;/Utility/LVLibp/NI_PackedLibraryUtility.lvlib"/>
 				<Item Name="Space Constant.vi" Type="VI" URL="/&lt;vilib&gt;/dlg_ctls.llb/Space Constant.vi"/>
-				<Item Name="Three Button Dialog CORE.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog CORE.vi"/>
-				<Item Name="Three Button Dialog.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Three Button Dialog.vi"/>
-				<Item Name="Trim Whitespace One-Sided.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace One-Sided.vi"/>
 				<Item Name="Trim Whitespace.vi" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/Trim Whitespace.vi"/>
 				<Item Name="whitespace.ctl" Type="VI" URL="/&lt;vilib&gt;/Utility/error.llb/whitespace.ctl"/>
 			</Item>
 			<Item Name="Item_Interface.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/Item_Interface.ctl"/>
 			<Item Name="ItemRef.ctl" Type="VI" URL="/&lt;resource&gt;/Framework/Providers/API/ItemRef.ctl"/>
-			<Item Name="MD5 Message Digest (Hexadecimal String)__ogtk.vi" Type="VI" URL="/../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/md5/md5.llb/MD5 Message Digest (Hexadecimal String)__ogtk.vi"/>
-			<Item Name="MD5 Message Digest__ogtk.vi" Type="VI" URL="/../Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/md5/md5.llb/MD5 Message Digest__ogtk.vi"/>
+			<Item Name="MD5 Message Digest (Hexadecimal String)__ogtk.vi" Type="VI" URL="/Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/md5/md5.llb/MD5 Message Digest (Hexadecimal String)__ogtk.vi"/>
+			<Item Name="MD5 Message Digest__ogtk.vi" Type="VI" URL="/Program Files (x86)/National Instruments/LabVIEW 2020/user.lib/_OpenG.lib/md5/md5.llb/MD5 Message Digest__ogtk.vi"/>
 			<Item Name="Microsoft.VisualBasic" Type="Document" URL="Microsoft.VisualBasic">
 				<Property Name="NI.PreserveRelativePath" Type="Bool">true</Property>
 			</Item>

@@ -13,5 +13,5 @@ For now the only file types that support being deleted from the project are:
 - .ctl
 
 ## Requirements
-- LV2018 or higher
+- LV2020 or higher
 
