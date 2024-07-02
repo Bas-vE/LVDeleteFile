@@ -1,7 +1,7 @@
-<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-04-27 23:56:53" Modified_Date="2024-03-15 19:05:47" Creator="VI-Tech" Comments="" ID="7ed6a36df106f260321f627c8974e512">
+<VI_Package_Builder_Settings Version="2020.1" Created_Date="2023-04-27 23:56:53" Modified_Date="2024-07-02 13:28:28" Creator="VI-Tech" Comments="" ID="c9360bae5d92ce271596c07d2c3d310a">
   <Library_General_Settings>
     <Package_File_Name>BasvE_lib_LVDeleteFile</Package_File_Name>
-    <Library_Version>0.2.0.4</Library_Version>
+    <Library_Version>0.3.0.5</Library_Version>
     <Auto_Increment_Version>false</Auto_Increment_Version>
     <Library_Source_Folder>..</Library_Source_Folder>
     <Library_Output_Folder>.</Library_Output_Folder>
@@ -36,9 +36,9 @@ Supported Items:
       <Copyright/>
       <Packager>Bas v. Etten</Packager>
       <URL>https://github.com/Bas-vE/LVDeleteFile</URL>
-      <Release_Notes>- Updated source to LV2020
-- Added option to move files to Recycle Bin
-- Added option for remembering last choice</Release_Notes>
+      <Release_Notes>- Fixed a bug where your choice was not remembered when an error occured during deleting a file
+- Fixed a bug where all files were not deleted when the first file in the array had an error
+- Changed the layout of the dialog box to make it more compact</Release_Notes>
     </Description>
     <Destinations>
       <Toolkit_VIs>
